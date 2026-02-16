@@ -1,0 +1,7 @@
+{
+  "name": "Smart Translate",
+  "description": "Real-time translation and periodic analysis tool using long-context AI.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
