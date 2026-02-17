@@ -1,20 +1,80 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# smart-translate
 
-# Run and deploy your AI Studio app
+This project is a React application built with Vite, designed to provide smart translation features effectively.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1dbibSfhmyLS5M69WmU-v5_m6bPOWiF9A
+- **Smart Translation**: leverages AI for context-aware translations.
+- **Modern Tech Stack**: React, Vite, TypeScript, and Tailwind CSS (if applicable).
+- **Automated Deployment**: GitHub Actions workflow for seamless deployment to GitHub Pages.
 
-## Run Locally
+## Getting Started
 
-**Prerequisites:**  Node.js
+### Prerequisites
 
+- Node.js (v18 or higher recommended)
+- npm (v9 or higher recommended)
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Installation
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/YUSEN711/smart-translate.git
+   cd smart-translate
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables:**
+   - Create a `.env.local` file in the root directory.
+   - Add your API keys and configuration:
+     ```env
+     VITE_GEMINI_API_KEY=your_api_key_here
+     ```
+
+### Development
+
+To start the development server:
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000/smart-translate/](http://localhost:3000/smart-translate/) (or the URL shown in your terminal) to view the app.
+
+### Building for Production
+
+To build the application for production:
+
+```bash
+npm run build
+```
+
+The build artifacts will be stored in the `dist` directory.
+
+### Deployment
+
+This project is configured to automatically deploy to GitHub Pages using GitHub Actions.
+
+1. **Push changes to `main` branch:**
+   Any push to the `main` branch will trigger the deployment workflow.
+
+2. **Manual Deployment (Optional):**
+   You can also manually deploy by running the workflow from the Actions tab in your repository.
+
+3. **GitHub Pages Settings:**
+   Ensure your repository's Pages settings are configured to serve from the `gh-pages` branch.
+
+## Project Structure
+
+- `src/`: Source code
+- `public/`: Static assets
+- `.github/workflows/`: GitHub Actions workflows
+- `vite.config.ts`: Vite configuration
+
+## License
+
+[MIT](LICENSE)
